@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practise</title>
+</head>
+<body style="background-color: black;  color: white">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+
+    <script>
+                   function addLanguage (langName) {
+                    const myli = document.createElement('li');
+
+                    myli.innerHTML = `${langName}`
+
+                    const sujan = document.querySelector('.language')
+
+                    sujan.appendChild(myli)
+
+                   }
+                       addLanguage("python")
+                       addLanguage("java")
+
+                     
+
+
+
+
+
+
+                       function opti (langName) {
+                        const myli = document.createElement('li');
+                        myli.appendChild(document.createTextNode(langName))
+                        document.querySelector('.language').appendChild(myli)
+                       }
+                       opti('goLang')
+                       opti('docker')
+                       
+
+
+                    //    Edit
+
+                       const secondLang = document.querySelector("li:nth-child(2)")
+                    //    secondLang.innerHTML = "Mo Lang"
+                     const newLi =  document.createElement('li')
+                     newLi.textContent = 'mojola'
+                     secondLang.replaceWith(newLi)
+
+
+
+                     //edit
+
+                     const firstLang = document.querySelector("li:first-child")
+                     firstLang.outerHTML = '<li>Typescript</li>'
+
+
+
+                        //remove
+
+                       const sujanfw =  document.querySelector('li:last-child')
+                            sujanfw.remove()
+                           
+    </script>
+</body>
+</html>

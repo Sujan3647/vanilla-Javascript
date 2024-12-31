@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom practise</title>
+</head>
+<body style="background-color: rgb(46, 43, 43); color:whitesmoke">
+
+    
+</body>
+
+<script>
+
+// const h1 = document.createElement('h1')
+// console.log(h1);
+
+ const div = document.createElement('div')
+console.log(div);
+
+div.className = "main";
+// div.id = "myId";
+div.id = Math.round(Math.random() * 10 + 1)
+
+div.setAttribute("title", "sujan revision kar raha hai")
+
+div.style.backgroundColor = "blue"
+div.style.padding = "12px"
+div.style.borderRadius = "2px"
+
+// div.innerText = "Sujan Ali"
+
+const addText = document.createTextNode("sujan is sexy bro !")
+
+div.appendChild(addText)
+
+document.body.appendChild(div)
+
+</script>
+
+</html>
